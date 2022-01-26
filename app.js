@@ -20,4 +20,4 @@
 
 // // document.addEventListener("keydown", func());
 
-document.body.addEventListener("keydown", console.log("keydown"));
+document.addEventListener("keydown", console.log("keydown"));
