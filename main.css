@@ -1,7 +1,8 @@
 body {
-    background: violet;
+    background-image: linear-gradient(to bottom left, violet, aquamarine);
     font-family: sans-serif;
     font-size: 60pt;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -21,8 +22,6 @@ body {
     justify-items: space-around;
     align-items: center;
     justify-items: center;
-    width: 100vw;
-    height: 100vh;
     /* border: 2px aquamarine dashed; */
 }
 
@@ -30,14 +29,29 @@ body {
     visibility: hidden;
 }
 
-.show {
-    visibility: visible;
-}
-
 .innerElement3 {
     display: flex;
     flex-direction: column;
-    width: 33.33vw;
+    flex-wrap: wrap;
+    width: 100vw;
     height: 100vh;
-    font-size: 20pt
+    font-size: 20pt;
 }
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    font-weight: 600;
+
+}
+
+/* @media screen and (max-width: 480px) {
+    .body {
+        font-family: serif;
+    }
+} */
