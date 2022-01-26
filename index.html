@@ -2,27 +2,49 @@
 <HTML lang="en">
     <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <header>
         </header>
-        <p id="testPara">test text</p>
         <script src="app.js">
             // addEventListener("keydown", console.log("keydown"))
         </script>
-        <table>
+        <!-- <table>
             <tr>
-                <td>Key</td>
-                <td>Value</td>
+                <td>event.key</td>
+                <td id = "shaKeyProp">Value</td>
             </tr>
             <tr>
-                <td>Key</td>
-                <td>Value</td>
+                <td>event.code</td>
+                <td id = "shaCodeProp">Value</td>
             </tr>
             <tr>
-                <td>Key</td>
-                <td>Value</td>
+                <td>event.which</td>
+                <td id = "shaWhichProp">Value</td>
             </tr>
-        </table>
+        </table> -->
+
+        <div class="containerTop">
+                <div id = "shaWhichProp1">event.key</div>
+            <div class = "containerLower">
+                <div class = "innerElement3">
+                    <p>event.key</p>
+                    <p id = "shaKeyProp">Value</p>
+                </div>
+
+                <div class = "innerElement3">
+                    <p>event.code</p>
+                    <p id = "shaCodeProp">Value</p>
+                </div>
+
+                <div class = "innerElement3">
+                    <p>event.which</p>
+                    <p id = "shaWhichProp2">Value</p>
+                </div> 
+            </div>
+            </div>
+
+        </div>
     </body>
 </HTML>
