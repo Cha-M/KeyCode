@@ -4,20 +4,32 @@
 
 // testPara.addEventListener("click", () => {console.log("you clicked the test"); document.body.style.background = "blue";})
 
-// const func1 = (shaStr) => {
-//     console.log(shaStr);
-//     // alert("keydown");
-//     if (Event.keyCode == 86)
-//     {
-//         document.body.style.background = "violet";
-//     }
+//  const func1 = (shaStr) => {
+//      console.log(shaStr);
+//       alert("keydown");
+//      if (Event.keyCode == 86)
+//      {
+//          document.body.style.background = "violet";
+//      }
       
-//     shaMessage.textcontent = shaStr;
+//      shaMessage.textcontent = shaStr;
 // }
 
 
-
+const func1 = (shaStr) => {
+    console.log(shaStr);
+     alert("keydown");
+    if (Event.keyCode == 86)
+    {
+        document.body.style.background = "violet";
+    }
+     
+    shaMessage.textcontent = shaStr;
+}
 
 // // document.addEventListener("keydown", func());
 
-document.addEventListener("keydown", console.log("keydown"));
+addEventListener("keydown", (e) => {console.log(e)});
+
+addEventListener("keydown", func1);
+
