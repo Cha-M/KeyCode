@@ -20,7 +20,7 @@
 // let shaCodePropElement = document.getElementById("shaCodeProp")
 // let shaWhichPropElement = document.getElementById("shaWhichProp")
 
-const func1 = (Event) => {
+const updateValues = (Event) => {
     console.log(Event);
     console.log("keydown");
 
@@ -35,10 +35,12 @@ const func1 = (Event) => {
     shaWhichProp1.innerHTML = Event.which;
     shaWhichProp2.innerHTML = Event.which;
 
+    document.getElementById("pressPrompt").className = "hide";
+    document.getElementById("keyCoder").className = "topContainer";
 
 }
 
 // addEventListener("keydown", (e) => {console.log(e)});
 
-addEventListener("keydown", func1, false);
+addEventListener("keydown", updateValues, false);
 
