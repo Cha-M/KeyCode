@@ -6,23 +6,23 @@ body {
     text-align: center;
 }
 
+p {
+    line-height: 4pt;
+}
+
 .containerTop {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: 100vh;
-    align-items: space-around;
-    justify-items: space-around;
-    /* border: 2px tomato dashed; */
+    justify-items: center;
+
+
 }
 
 .containerLower {
     display: flex;
     flex-direction: row;
-    justify-items: space-around;
-    align-items: center;
-    justify-items: center;
-    /* border: 2px aquamarine dashed; */
+
 }
 
 .hide {
@@ -50,8 +50,11 @@ body {
 
 }
 
-/* @media screen and (max-width: 480px) {
-    .body {
-        font-family: serif;
+@media screen and (max-width: 480px) {
+    .containerLower {
+        flex-direction: column;
     }
-} */
+    .innerElement3 {
+        height: 20vh;
+    }
+}

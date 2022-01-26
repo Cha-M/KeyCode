@@ -36,7 +36,7 @@ const updateValues = (Event) => {
     shaWhichProp2.innerHTML = Event.which;
 
     document.getElementById("pressPrompt").className = "hide";
-    document.getElementById("keyCoder").className = "topContainer";
+    document.getElementById("keyCoder").className = "containerTop";
 
 }
 
